@@ -2,8 +2,8 @@ import logging
 import os
 
 import faiss
-from langchain.vectorstores import FAISS
 from langchain_community.docstore.in_memory import InMemoryDocstore
+from langchain_community.vectorstores import FAISS
 from langchain_huggingface import HuggingFaceEmbeddings
 
 logger = logging.getLogger(__name__)
@@ -13,7 +13,7 @@ class VectorStoreService:
     def __init__(self):
         self.embeddings = HuggingFaceEmbeddings(
             model_name="BAAI/bge-base-en-v1.5",
-            model_kwargs={"device": "cpu"},
+            model_kwargs={"device": "mps"},
         )
         self.faiss_index_dir = "vector_stores/faiss_index"
         self._initialize()
