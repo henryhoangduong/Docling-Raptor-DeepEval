@@ -1,0 +1,25 @@
+[project]
+name = "docling-raptor-deepeval"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "deepeval>=2.9.7",
+    "docling>=2.15.1",
+    "faiss-cpu>=1.11.0",
+    "fitz>=0.0.1.dev2",
+    "langchain>=0.3.25",
+    "langchain-community>=0.3.24",
+    "langchain-docling>=0.2.0",
+    "langchain-huggingface>=0.2.0",
+    "langchain-openai>=0.3.18",
+    "matplotlib>=3.10.3",
+    "numpy>=2.2.6",
+    "pandas>=2.2.3",
+    "pypdf>=5.5.0",
+    "python-dotenv>=1.1.0",
+    "rank-bm25>=0.2.2",
+    "scikit-learn>=1.6.1",
+    "tools>=1.0.2",
+]
